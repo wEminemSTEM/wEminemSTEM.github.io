@@ -9,38 +9,127 @@
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#previous-work">Previous Work</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li>
+          <button type="button" class="nav-btn" data-target="about">
+            About
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-target="previous-work">
+            Previous Work
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-target="projects">
+            Projects
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-target="contact">
+            Contact
+          </button>
+        </li>
       </ul>
     </nav>
 
     <!-- About Section -->
     <section id="about">
       <h1>About Me</h1>
-      <!-- Photo and intro will go here -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet cursus, enim risus ultricies urna, a cursus enim erat eu urna.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+        Etiam nec velit nec libero pretium pharetra. Suspendisse potenti.
+        Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.
+      </p>
+      <p>
+        Proin ac massa sed turpis tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit.
+        Sed ut imperdiet nisi. Proin condimentum fermentum nunc.
+      </p>
     </section>
 
     <!-- Previous Work Section -->
     <section id="previous-work">
       <h1>Previous Work</h1>
-      <!-- Resume, experience, or skills will go here -->
+      <ul>
+        <li>
+          <strong>Job 1: Web Developer at Example Corp</strong>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque euismod, nisi eu consectetur consectetur, nisl nisl aliquam nisl, eu aliquam nisl nisl eu nisl.
+            Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.
+          </p>
+        </li>
+        <li>
+          <strong>Job 2: Intern at Tech Startup</strong>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Etiam nec velit nec libero pretium pharetra. Suspendisse potenti.
+            Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.
+          </p>
+        </li>
+        <li>
+          <strong>Course: CS 463 Intro to Web Dev</strong>
+          <p>
+            Proin ac massa sed turpis tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit.
+          </p>
+        </li>
+      </ul>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
       <h1>Projects</h1>
-      <!-- List of projects will go here -->
+      <ul>
+        <li>
+          <strong>Project A: Portfolio Website</strong>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque euismod, nisi eu consectetur consectetur, nisl nisl aliquam nisl, eu aliquam nisl nisl eu nisl.
+          </p>
+        </li>
+        <li>
+          <strong>Project B: To-Do List App</strong>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Etiam nec velit nec libero pretium pharetra. Suspendisse potenti.
+          </p>
+        </li>
+        <li>
+          <strong>Project C: Weather Dashboard</strong>
+          <p>
+            Proin ac massa sed turpis tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          </p>
+        </li>
+      </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <h1>Contact</h1>
-      <!-- Contact form will go here -->
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Your Name" />
+        <br />
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="you@example.com" />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your message"></textarea>
+        <br />
+        <button type="submit">Send</button>
+      </form>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque euismod, nisi eu consectetur consectetur, nisl nisl aliquam nisl, eu aliquam nisl nisl eu nisl.
+        Mauris euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.
+      </p>
     </section>
 
-    <script src="js/main.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
