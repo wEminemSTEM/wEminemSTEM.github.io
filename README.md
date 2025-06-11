@@ -1,6 +1,18 @@
-# My Web Project
+# Personal Portfolio Web Project
 
-This project is a simple web application built using HTML, JavaScript, and CSS. It serves as a demonstration of how to structure a web project and includes the essential files needed for a functional web application.
+This project is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases my background, skills, coursework, work experience, and selected projects. The site features a responsive design, accessible navigation, interactive accordions, and a contact form with a modal confirmation.
+
+## Features
+
+- **About Me**: Introduction and background information.
+- **Previous Work**: Accordion section listing work experience and notable projects.
+- **Skills & Coursework**: Expandable lists of technical skills and relevant coursework.
+- **Projects**: Visual and textual summaries of selected projects, including:
+  - **Butterfly Waveform Visualizer**: A Python-based audio visualization tool.
+  - **Field Trip**: A React-based virtual field environment platform for education.
+- **Contact Form**: Users can submit a message; submitted information is displayed in a modal dialog for confirmation.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Accessibility**: Semantic HTML, ARIA attributes, and keyboard navigation support.
 
 ## Project Structure
 
@@ -8,40 +20,33 @@ This project is a simple web application built using HTML, JavaScript, and CSS. 
 my-web-project
 ├── src
 │   ├── index.html       # Main HTML document
-│   ├── app.js           # JavaScript code for functionality
-│   └── styles.css       # CSS styles for visual appearance
-├── package.json         # npm configuration file
+│   ├── app.js           # JavaScript for interactivity (accordion, modal, etc.)
+│   └── styles.css       # CSS styles for layout and appearance
+├── images               # Project and profile images
+├── package.json         # npm configuration (if using npm)
 └── README.md            # Project documentation
 ```
 
-## Files Overview
+## Usage
 
-- **src/index.html**: This is the entry point of the web application. It includes references to the JavaScript and CSS files necessary for the application to function and display correctly.
+1. Clone or download this repository.
+2. Open `src/index.html` in your web browser to view the site.
+3. No build steps or dependencies are required for basic usage.
 
-- **src/app.js**: This file contains the JavaScript code that manages the interactivity and functionality of the web application. It handles user inputs, events, and any dynamic content updates.
+## Customization
 
-- **src/styles.css**: This file defines the styles for the application, including layout, colors, fonts, and overall visual design.
+- **Images**: Replace images in the `images` folder with your own.
+- **Content**: Update text in `index.html` to reflect your own background, skills, and projects.
+- **Styling**: Modify `styles.css` to personalize colors, fonts, and layout.
 
-- **package.json**: This file is used for managing project dependencies and scripts. It allows you to install necessary packages and run scripts for development and production.
+## Accessibility
 
-## Getting Started
-
-To get started with this project, clone the repository and navigate to the project directory. You can install the necessary dependencies using npm:
-
-```
-npm install
-```
-
-After installing the dependencies, you can run the application using the following command:
-
-```
-npm start
-```
-
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
+- All interactive elements are keyboard accessible.
+- Accordion and modal use ARIA attributes for screen reader support.
+- Sufficient color contrast and focus indicators are provided.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
+
+---
