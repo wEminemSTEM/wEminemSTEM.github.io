@@ -7,126 +7,268 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <button class="menu-toggle" aria-label="Open navigation">&#9776;</button>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#previous-work">Previous Work</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <!-- Navbar -->
+      <nav id="navbar">
+        <button class="menu-toggle" aria-label="Open navigation">
+          &#9776;
+        </button>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#previous-work">Previous Work</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about">
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
-        nunc ut laoreet cursus, enim risus ultricies urna, a cursus enim erat eu
-        urna. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-        faucibus orci luctus et ultrices posuere cubilia curae; Etiam nec velit
-        nec libero pretium pharetra. Suspendisse potenti. Mauris euismod, urna
-        eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a
-        dolor.
-      </p>
-      <p>
-        Proin ac massa sed turpis tristique facilisis. Pellentesque habitant
-        morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non
-        neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.
-      </p>
-    </section>
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h1 style="text-align: center">About Me</h1>
+        <div class="about-block">
+          <div class="about-image">
+            <img
+              height="600"
+              width="600"
+              src="images/She was a fairy.jpg"
+              alt="Photo of developer, Kris Cooper, sitting on a tree in the woods"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              Kris Cooper is a computer science student at Portland State
+              University with a background in animation and a passion for visual
+              storytelling, AI, and rendering technology. With experience in
+              both creative and technical fields, Kris focuses on building
+              inclusive, visually rich experiences that bridge art and
+              technology. Their work explores the intersections of identity,
+              innovation, and representation in media and software.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Previous Work Section -->
-    <section id="previous-work">
-      <h1>Previous Work</h1>
-      <ul>
-        <li>
-          <strong>Job 1: Web Developer at Example Corp</strong>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque euismod, nisi eu consectetur consectetur, nisl nisl
-            aliquam nisl, eu aliquam nisl nisl eu nisl. Mauris euismod, urna eu
-            tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna
-            a dolor.
-          </p>
-        </li>
-        <li>
-          <strong>Job 2: Intern at Tech Startup</strong>
-          <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Etiam nec velit nec libero pretium pharetra.
-            Suspendisse potenti. Mauris euismod, urna eu tincidunt consectetur,
-            nisi nisl aliquam enim, nec dictum nisi urna a dolor.
-          </p>
-        </li>
-        <li>
-          <strong>Course: CS 463 Intro to Web Dev</strong>
-          <p>
-            Proin ac massa sed turpis tristique facilisis. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Nullam ac urna eu felis dapibus condimentum sit amet a
-            augue. Sed non neque elit.
-          </p>
-        </li>
-      </ul>
-    </section>
+      <!-- Previous Work Section -->
+      <section id="previous-work">
+        <h1>Previous Work</h1>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h1>Projects</h1>
-      <ul>
-        <li>
-          <strong>Project A: Portfolio Website</strong>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque euismod, nisi eu consectetur consectetur, nisl nisl
-            aliquam nisl, eu aliquam nisl nisl eu nisl.
-          </p>
-        </li>
-        <li>
-          <strong>Project B: To-Do List App</strong>
-          <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Etiam nec velit nec libero pretium pharetra.
-            Suspendisse potenti.
-          </p>
-        </li>
-        <li>
-          <strong>Project C: Weather Dashboard</strong>
-          <p>
-            Proin ac massa sed turpis tristique facilisis. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas.
-          </p>
-        </li>
-      </ul>
-    </section>
+        <button
+          class="accordion-toggle"
+          aria-expanded="false"
+          aria-controls="work-experience-content"
+          id="work-experience-toggle"
+        >
+          Work Experience
+        </button>
+        <div
+          class="accordion-content"
+          id="work-experience-content"
+          role="region"
+          aria-labelledby="work-experience-toggle"
+        >
+          <ul>
+            <li>
+              <strong>Client Support Specialist – Carepayment</strong><br />
+              <em>Beaverton, OR | May 2018 – Sept 2023</em>
+              <ul>
+                <li>
+                  Created detailed reports to support client engagement
+                  tracking.
+                </li>
+                <li>
+                  Boosted customer engagement by 5% through effective
+                  communication.
+                </li>
+                <li>Resolved data issues that increased monthly revenue.</li>
+                <li>
+                  Maintained 90%+ satisfaction scores; promoted to
+                  reconciliation team.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h1>Contact</h1>
-      <form>
-        <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="Your Name" />
-        <br />
-        <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="you@example.com" />
-        <br />
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="Your message"></textarea>
-        <br />
-        <button type="submit">Send</button>
-      </form>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        euismod, nisi eu consectetur consectetur, nisl nisl aliquam nisl, eu
-        aliquam nisl nisl eu nisl. Mauris euismod, urna eu tincidunt
-        consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.
-      </p>
-    </section>
+        <button class="accordion-toggle" type="button">Projects</button>
+        <div class="accordion-content">
+          <ul>
+            <li>
+              <strong>Chicken Foot (C++)</strong>
+              <ul>
+                <li>Console-based domino game using object-oriented design.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Humane Shelter Management System (C++)</strong>
+              <ul>
+                <li>
+                  Simulated pet shelter system with dynamic binding and runtime
+                  type ID.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Game Console Simulation (Python)</strong>
+              <ul>
+                <li>
+                  Text-based interface for a single-player card game; emphasized
+                  black-box testing.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Viktar File Archive Creator (C)</strong>
+              <ul>
+                <li>
+                  UNIX-style file archiver handling custom formats and file I/O.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <button class="accordion-toggle" type="button">Skills</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+
+        <button class="accordion-toggle" type="button">Coursework</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Data Structures</li>
+            <li>Intro to Web Development</li>
+            <li>Software Engineering</li>
+            <li>Operating Systems</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h1>Projects</h1>
+        <div class="about-block">
+          <div class="about-image">
+            <img
+              src="images/Butterfly Visualizer.png"
+              alt="Screenshot of Butterfly Waveform Visualizer"
+              width="600"
+              height="474"
+            />
+          </div>
+          <div class="about-text">
+            <h2>
+              <a
+                href="https://github.com/wEminemSTEM/CS-416P-Student-Portfolio/blob/main/Visualizer/README.md"
+                target="_blank"
+                rel="noopener"
+              >
+                Butterfly Waveform Visualizer
+              </a>
+            </h2>
+            <p>
+              The Butterfly Waveform Visualizer is a Python program that
+              generates a synchronized visual representation of audio input,
+              forming a beautiful butterfly-shaped animation. The visualizer
+              maps audio waveform data to a dynamic butterfly curve while
+              applying vibrant, shifting colors to circles drawn in real time.
+            </p>
+            <p>
+              The visualization runs as the audio plays, with features such as
+              adjustable circle counts and smooth color gradients that rotate
+              across the spectrum over time.
+            </p>
+          </div>
+        </div>
+        <div class="about-block">
+          <div class="about-image">
+            <img
+              src="images/Field Trip.png"
+              alt="Screenshot of Field Trip Virtual Field Environment"
+              width="600"
+              height="358"
+            />
+          </div>
+          <div class="about-text">
+            <h2>
+              <a
+                href="https://github.com/trishanguyen2/FieldTrip/blob/main/README.md"
+                target="_blank"
+                rel="noopener"
+              >
+                Field Trip
+              </a>
+            </h2>
+            <p>
+              Field Trip is a React-based application for building and exploring
+              immersive Virtual Field Environments (VFEs). This was a capstone
+              project that I was a contributor on with a team of 5 others. My
+              feature addition was the hotspot sidebar.
+            </p>
+            <p>
+              This feature adds a sidebar to the photosphere viewer that
+              displays a hierarchical, collapsible list of all hotspots within
+              each photosphere, allowing users to easily browse, expand, and
+              select hotspots—including nested ones—across the virtual field
+              trip. The sidebar enhances navigation by letting users quickly
+              center the viewer on any hotspot, and provides a clear overview of
+              the spatial structure and relationships between hotspots within
+              and across photospheres. This improves usability for both
+              exploration and editing workflows.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h1>Contact</h1>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" placeholder="Your Name" />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+          />
+          <br />
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+          ></textarea>
+          <br />
+          <div class="button-row">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <div
+        id="contact-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-title"
+      >
+        <div id="contact-modal-content">
+          <button id="contact-modal-close" aria-label="Close">&times;</button>
+          <h2 id="contact-modal-title">Submitted Information</h2>
+        </div>
+      </div>
+    </main>
 
     <script src="app.js"></script>
   </body>
